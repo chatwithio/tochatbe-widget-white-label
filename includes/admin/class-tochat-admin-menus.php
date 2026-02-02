@@ -43,6 +43,15 @@ class TOCHAT_Admin_Menus {
 			array( $this, 'admin_settings_page' ),
 			'dashicons-admin-comments'
 		);
+
+		add_submenu_page(
+			'tochat',
+			esc_html__( 'Analytics', 'tochat' ),
+			esc_html__( 'Analytics', 'tochat' ),
+			'manage_options',
+			'tochat-analytics',
+			array( $this, 'admin_analytics_page' )
+		);
 	}
 
 	/**
@@ -54,6 +63,17 @@ class TOCHAT_Admin_Menus {
 	 */
 	public function admin_settings_page() {
 		include_once TOCHAT_PLUGIN_PATH . 'includes/admin/views/html-settings-page.php';
+	}
+
+	/**
+	 * Widget Analytics Page.
+	 *
+	 * @since 1.3.0
+	 *
+	 * @return void
+	 */
+	public function admin_analytics_page() {
+		include_once TOCHAT_PLUGIN_PATH . 'includes/admin/views/html-analytics-page.php';
 	}
 }
 

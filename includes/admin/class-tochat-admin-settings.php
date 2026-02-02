@@ -74,6 +74,54 @@ class TOCHAT_Admin_Settings {
 			}
 		);
 		register_setting( 'tochat_settings', 'tochat_backend_key', 'sanitize_text_field' );
+
+		// Register Email Setting.
+		register_setting(
+			'tochat_analytics_settings',
+			'tochat_email',
+			array(
+				'sanitize_callback' => function ( $input ) {
+					$email    = isset( $_POST['tochat_email'] ) ? sanitize_email( wp_unslash( $_POST['tochat_email'] ) ) : ''; // phpcs:ignore
+					$password = isset( $_POST['tochat_password'] ) ? sanitize_text_field( wp_unslash( $_POST['tochat_password'] ) ) : ''; // phpcs:ignore
+					$token    = tochat_api_generate_token( $email, $password );
+
+					if ( is_wp_error( $token ) ) {
+						// Add an error message to show at the top of the page.
+						add_settings_error(
+							'tochat_email',
+							'invalid_credentials',
+							$token->get_error_message(),
+							'error'
+						);
+
+						// Store the error state in a global so the next function can see it.
+						$GLOBALS['tochat_auth_failed'] = true;
+
+						return '';
+					}
+
+					// If we reach here, authentication was successful. Store the token.
+					tochat_api_set_token( $token );
+
+					return sanitize_email( $input );
+				},
+			)
+		);
+
+		// Register Password Setting.
+		register_setting(
+			'tochat_analytics_settings',
+			'tochat_password',
+			array(
+				'sanitize_callback' => function ( $input ) {
+					if ( isset( $GLOBALS['tochat_auth_failed'] ) && true === $GLOBALS['tochat_auth_failed'] ) {
+						return '';
+					}
+
+					return sanitize_text_field( $input );
+				},
+			)
+		);
 	}
 }
 

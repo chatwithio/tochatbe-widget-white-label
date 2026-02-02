@@ -69,6 +69,7 @@ final class TOCHAT {
 
 		// Functions.
 		include_once TOCHAT_PLUGIN_PATH . 'includes/tochat-functions.php';
+		include_once TOCHAT_PLUGIN_PATH . 'includes/tochat-api-functions.php';
 
 		// Admin classes.
 		if ( is_admin() ) {
@@ -76,6 +77,8 @@ final class TOCHAT {
 			include_once TOCHAT_PLUGIN_PATH . 'includes/admin/class-tochat-admin-scripts.php';
 			include_once TOCHAT_PLUGIN_PATH . 'includes/admin/class-tochat-admin-menus.php';
 			include_once TOCHAT_PLUGIN_PATH . 'includes/admin/class-tochat-admin-widget.php';
+			include_once TOCHAT_PLUGIN_PATH . 'includes/admin/class-tochat-admin-actions.php';
+			include_once TOCHAT_PLUGIN_PATH . 'includes/admin/class-tochat-admin-dashboard-widgets.php';
 		} else {
 			include_once TOCHAT_PLUGIN_PATH . 'includes/class-tochat-code.php';
 		}

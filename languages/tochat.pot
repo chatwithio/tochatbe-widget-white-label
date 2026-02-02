@@ -1,20 +1,162 @@
-# Copyright (C) 2025 Tochat.be
+# Copyright (C) 2026 Tochat.be
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Tochat.be Widget 1.2.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tochatbe-widget\n"
-"POT-Creation-Date: 2025-05-27 05:28:18+00:00\n"
+"Project-Id-Version: Tochat.be Widget 1.4.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tochabe-widget\n"
+"POT-Creation-Date: 2026-02-02 06:09:07+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2026-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 1.0.3\n"
+"X-Generator: grunt-wp-i18n 1.0.4\n"
+
+#: includes/admin/class-tochat-admin-actions.php:50
+msgid "Security check failed."
+msgstr ""
+
+#: includes/admin/class-tochat-admin-dashboard-widgets.php:49
+#. translators: %s: Plugin Name
+msgid "%s Click Analytics"
+msgstr ""
+
+#: includes/admin/class-tochat-admin-dashboard-widgets.php:73
+#. translators: %s: URL to analytics page
+msgid ""
+"Please connect your account on the <a href=\"%s\">analytics page</a> to "
+"view click analytics."
+msgstr ""
+
+#: includes/admin/class-tochat-admin-dashboard-widgets.php:85
+#: includes/admin/views/html-analytics-page.php:109
+#. translators: %s: URL to settings page
+#. translators: %s: URL to settings page.
+msgid ""
+"No Tochat widget key found. Please add a widget key in the <a "
+"href=\"%s\">settings</a> to view analytics."
+msgstr ""
+
+#: includes/admin/class-tochat-admin-dashboard-widgets.php:99
+#: includes/admin/views/analytics-tabs/dashboard.php:28
+msgid "Clicks on your Widget from your Website"
+msgstr ""
+
+#: includes/admin/class-tochat-admin-dashboard-widgets.php:105
+#: includes/admin/views/analytics-tabs/dashboard.php:39
+#: includes/admin/views/analytics-tabs/dashboard.php:83
+msgid "Last 24 hours clicks"
+msgstr ""
+
+#: includes/admin/class-tochat-admin-dashboard-widgets.php:110
+#: includes/admin/views/analytics-tabs/dashboard.php:44
+#: includes/admin/views/analytics-tabs/dashboard.php:88
+msgid "Last week clicks"
+msgstr ""
+
+#: includes/admin/class-tochat-admin-dashboard-widgets.php:115
+#: includes/admin/views/analytics-tabs/dashboard.php:49
+#: includes/admin/views/analytics-tabs/dashboard.php:93
+msgid "Last 28 days clicks"
+msgstr ""
+
+#: includes/admin/class-tochat-admin-dashboard-widgets.php:120
+#: includes/admin/views/analytics-tabs/dashboard.php:54
+#: includes/admin/views/analytics-tabs/dashboard.php:98
+msgid "Last year clicks"
+msgstr ""
+
+#: includes/admin/class-tochat-admin-dashboard-widgets.php:127
+msgid "View detailed analytics"
+msgstr ""
+
+#: includes/admin/class-tochat-admin-menus.php:49
+#: includes/admin/class-tochat-admin-menus.php:50
+msgid "Analytics"
+msgstr ""
 
 #: includes/admin/class-tochat-admin-scripts.php:59
 msgid "Are you sure you want to delete?"
+msgstr ""
+
+#: includes/admin/views/analytics-tabs/dashboard.php:34
+#: includes/admin/views/analytics-tabs/dashboard.php:78
+msgid "Total clicks"
+msgstr ""
+
+#: includes/admin/views/analytics-tabs/dashboard.php:72
+msgid ""
+"Click on your Widget from outside your Website (other sources like Google, "
+"Instagram, etc...)"
+msgstr ""
+
+#: includes/admin/views/analytics-tabs/referrals.php:21
+#: includes/admin/views/html-analytics-page.php:121
+msgid "Referrals"
+msgstr ""
+
+#: includes/admin/views/analytics-tabs/referrals.php:22
+msgid "Count"
+msgstr ""
+
+#: includes/admin/views/analytics-tabs/referrals.php:31
+msgid "No identifiable referrer*"
+msgstr ""
+
+#: includes/admin/views/analytics-tabs/referrals.php:48
+#. translators: 1: Referral URL. 2: Referral Name.
+msgid "* The sending server did not set a referrer header."
+msgstr ""
+
+#: includes/admin/views/html-analytics-page.php:26
+#. translators: %s: The plugin name
+msgid "%s Analytics"
+msgstr ""
+
+#: includes/admin/views/html-analytics-page.php:35
+msgid "Connected as"
+msgstr ""
+
+#: includes/admin/views/html-analytics-page.php:37
+msgid "Disconnect"
+msgstr ""
+
+#: includes/admin/views/html-analytics-page.php:67
+#. translators: 1: Tochat website link, 2: Plugin Name.
+msgid ""
+"Enter your <a href=\"%1$s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">%2$s</a> credentials to connect and view analytics."
+msgstr ""
+
+#: includes/admin/views/html-analytics-page.php:77
+msgid "Email"
+msgstr ""
+
+#: includes/admin/views/html-analytics-page.php:83
+msgid "Password"
+msgstr ""
+
+#: includes/admin/views/html-analytics-page.php:90
+msgid "Connect"
+msgstr ""
+
+#: includes/admin/views/html-analytics-page.php:120
+msgid "Dashboard"
+msgstr ""
+
+#: includes/admin/views/html-analytics-page.php:137
+#. translators: %s: Account URL for statistics.
+msgid ""
+"<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">View more "
+"stats in your account</a>"
+msgstr ""
+
+#: includes/admin/views/html-analytics-page.php:147
+#. translators: %s: Account URL for leads.
+msgid ""
+"<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">View all your "
+"leads in your account</a>"
 msgstr ""
 
 #: includes/admin/views/html-settings-page.php:15
@@ -80,6 +222,36 @@ msgstr ""
 
 #: includes/admin/views/html-settings-page.php:139
 msgid "Add Widget For Internal Use"
+msgstr ""
+
+#: includes/tochat-api-functions.php:47 includes/tochat-api-functions.php:174
+#: includes/tochat-api-functions.php:276
+msgid "Failed to connect to TOCHAT API."
+msgstr ""
+
+#: includes/tochat-api-functions.php:58
+msgid "Invalid credentials."
+msgstr ""
+
+#: includes/tochat-api-functions.php:66 includes/tochat-api-functions.php:212
+#: includes/tochat-api-functions.php:314
+msgid "Unexpected response from TOCHAT API."
+msgstr ""
+
+#: includes/tochat-api-functions.php:79 includes/tochat-api-functions.php:225
+msgid "Invalid response format from TOCHAT API."
+msgstr ""
+
+#: includes/tochat-api-functions.php:151 includes/tochat-api-functions.php:247
+msgid "No API token found. Please authenticate first."
+msgstr ""
+
+#: includes/tochat-api-functions.php:196 includes/tochat-api-functions.php:298
+msgid "Invalid or expired JWT Token."
+msgstr ""
+
+#: includes/tochat-api-functions.php:204 includes/tochat-api-functions.php:306
+msgid "Invalid or no widget found."
 msgstr ""
 
 #: includes/tochat-functions.php:59
