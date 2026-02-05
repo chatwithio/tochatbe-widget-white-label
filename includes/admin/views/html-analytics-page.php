@@ -131,23 +131,27 @@ $tab = isset( $_GET['tab'] ) ? sanitize_text_field( wp_unslash( $_GET['tab'] ) )
 
 			<p style="margin-top: 20px; text-align: right;">
 				<?php
-				echo wp_kses_post(
-					sprintf(
-						/* translators: %s: Account URL for statistics. */
-						__( '<a href="%s" target="_blank" rel="noopener noreferrer">View more stats in your account</a>', 'tochat' ),
-						esc_url( 'https://services.tochat.be/app/business/' . get_option( 'tochat_key' ) )
-					)
-				);
+				if ( defined( 'TOCHAT_PLUGIN_ANALYTICS_VIEW_MORE_STATS_URL' ) ) {
+					echo wp_kses_post(
+						sprintf(
+							/* translators: %s: Account URL for statistics. */
+							__( '<a href="%s" target="_blank" rel="noopener noreferrer">View more stats in your account</a>', 'tochat' ),
+							esc_url( trailingslashit( TOCHAT_PLUGIN_ANALYTICS_VIEW_MORE_STATS_URL ) . get_option( 'tochat_key' ) )
+						)
+					);
+				}
 				?>
 				<span> | </span>
 				<?php
-				echo wp_kses_post(
-					sprintf(
-						/* translators: %s: Account URL for leads. */
-						__( '<a href="%s" target="_blank" rel="noopener noreferrer">View all your leads in your account</a>', 'tochat' ),
-						esc_url( 'https://services.tochat.be/app/whatsapp/form/formdatalist/' . get_option( 'tochat_key' ) )
-					)
-				);
+				if ( defined( 'TOCHAT_PLUGIN_ANALYTICS_VIEW_ALL_LEADS_URL' ) ) {
+					echo wp_kses_post(
+						sprintf(
+							/* translators: %s: Account URL for leads. */
+							__( '<a href="%s" target="_blank" rel="noopener noreferrer">View all your leads in your account</a>', 'tochat' ),
+							esc_url( trailingslashit( TOCHAT_PLUGIN_ANALYTICS_VIEW_ALL_LEADS_URL ) . get_option( 'tochat_key' ) )
+						)
+					);
+				}
 				?>
 			</p>
 

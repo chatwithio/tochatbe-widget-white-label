@@ -2,9 +2,9 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Tochat.be Widget 1.4.0\n"
+"Project-Id-Version: Tochat.be Widget 1.4.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tochabe-widget\n"
-"POT-Creation-Date: 2026-02-02 06:09:07+00:00\n"
+"POT-Creation-Date: 2026-02-05 15:51:33+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -145,14 +145,14 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
-#: includes/admin/views/html-analytics-page.php:137
+#: includes/admin/views/html-analytics-page.php:138
 #. translators: %s: Account URL for statistics.
 msgid ""
 "<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">View more "
 "stats in your account</a>"
 msgstr ""
 
-#: includes/admin/views/html-analytics-page.php:147
+#: includes/admin/views/html-analytics-page.php:150
 #. translators: %s: Account URL for leads.
 msgid ""
 "<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">View all your "

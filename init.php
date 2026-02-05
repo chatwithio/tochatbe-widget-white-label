@@ -6,7 +6,7 @@
  * Plugin Name:       Tochat.be Widget
  * Plugin URI:        https://tochat.be/
  * Description:       Customer service and sales via WhatsApp
- * Version:           1.4.0
+ * Version:           1.4.1
  * Requires at least: 5.2
  * Requires PHP:      7.4
  * Author:            Tochat.be
@@ -26,12 +26,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 define( 'TOCHAT_PLUGIN_FILE', __FILE__ );
 define( 'TOCHAT_PLUGIN_PATH', plugin_dir_path( TOCHAT_PLUGIN_FILE ) );
 define( 'TOCHAT_PLUGIN_URL', plugin_dir_url( TOCHAT_PLUGIN_FILE ) );
-define( 'TOCHAT_PLUGIN_VERSION', '1.4.0' );
+define( 'TOCHAT_PLUGIN_VERSION', '1.4.1' );
 
 // White label.
 define( 'TOCHAT_PLUGIN_NAME', 'Tochat.be Widget' );
 define( 'TOCHAT_PLUGIN_LOGIN_URL', 'https://tochat.be/' );
 define( 'TOCHAT_PLUGIN_DOCUMENTATION_URL', 'https://tochat.be/' );
+define( 'TOCHAT_PLUGIN_ANALYTICS_VIEW_MORE_STATS_URL', 'https://services.tochat.be/app/business/' );
+define( 'TOCHAT_PLUGIN_ANALYTICS_VIEW_ALL_LEADS_URL', 'https://services.tochat.be/app/whatsapp/form/formdatalist/' );
 
 // Load the main class.
 if ( ! class_exists( 'TOCHAT' ) ) {
